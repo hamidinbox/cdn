@@ -37,7 +37,7 @@ echo '
       "url": "https://'.$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI].'",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://'.$_SERVER[HTTP_HOST].'/wisata/?q={search_term_string}",
+        "target": "https://'.get_site_url().'/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
@@ -92,8 +92,8 @@ $adbox = '
 	</header>
 	<?php dynamic_sidebar('posts-1'); ?>
 	<div class="entry-content mh-clearfix">
+	
 						<?php
-		//the_post_thumbnail();
 		$n = urldecode('%0A');
 		$the_contentx = $post->post_content;
 		$the_contentx = str_replace('<figure', '<center><figure', $the_contentx);		
@@ -103,9 +103,10 @@ $adbox = '
 		$the_contentx = str_replace('<a href="https://news.xttsys.com">.</a>', '<center>'.$adbox.'</center>', $the_contentx);		
 		echo $the_contentx;		
 						?>		
+						
 	</div>
 	<div style="background: yellow; padding: 7px; margin-bottom: 5px; text-align: justify;">
-		Jangan lupa <b>Follow</b> untuk <b>mengikuti</b> update terbaru dari REO News yang berisi info unik dan update,
+		Jangan lupa <b>Follow</b> untuk <b>mengikuti</b> update terbaru dari <b>REO News</b> yang berisi info unik dan update,
 		contohnya seperti <b><?php echo $post_title_m; ?></b>.
 	</div>
 	<?php echo '<p>'.$adbox.'</p>';
