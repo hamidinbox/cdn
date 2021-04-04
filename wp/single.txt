@@ -37,7 +37,7 @@ echo '
       "url": "https://'.$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI].'",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://'.get_site_url().'/?q={search_term_string}",
+        "target": "'.get_site_url().'/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
