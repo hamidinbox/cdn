@@ -1,0 +1,114 @@
+	$post_id = get_the_ID();
+	$post_thum = get_the_post_thumbnail($post->ID, 'full' );
+	$post_thum = explode('src="', $post_thum);
+	$post_thum = explode('"', $post_thum[1]);
+	$post_thumb_m = trim($post_thum[0]);
+	$post_title_m = $post->post_title;
+	$post_date_m = $post->post_date;
+	$post_content_m = str_replace('"', '\'', $post->post_content);
+	$post_desc_m = str_replace('"', '\'', $post->post_excerpt);
+echo '
+<meta property="og:image" content="'.$post_thumb_m.'" />
+<script type="application/ld+json">
+{
+   "@context": "https://schema.org",
+   "@type": "NewsArticle",
+   "url": "https://'.$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI].'",
+   "publisher":{
+      "@type":"Organization",
+      "name":"REO News",
+      "logo":"https://nagacdn.netlify.app/img/reo_logobox.png"
+   },
+   "headline": "'.$post_title_m.'",
+   "mainEntityOfPage": "https://'.$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI].'",
+   "articleBody": "'.strip_tags($post_content_m).'",
+   "image":[
+      "'.$post_thumb_m.'?type=full",
+      "'.$post_thumb_m.'?type=thumbnail",
+      "'.$post_thumb_m.'?type=headline"
+   ],
+   "datePublished":"'.$post_date_m.'"
+}
+</script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://'.$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI].'",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://'.$_SERVER[HTTP_HOST].'/wisata/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://'.$_SERVER[HTTP_HOST].$_SERVER[REQUEST_URI].'"
+  },
+  "headline": "'.$post_title_m.'",
+  "description": "'.$post_desc_m.'",
+  "datePublished": "'.$post_date_m.'",
+  "dateModified": "'.$post_date_m.'",
+  "image": {
+    "@type": "ImageObject",
+	"url": "https://nagacdn.netlify.app/img/reo_logobox.png",
+    "height": 1024,
+    "width": 1024},
+	"publisher": {
+    "@type": "Organization",
+    "name": "REO News",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nagacdn.netlify.app/img/reo_logobox.png",
+      "width": 1024,
+      "height": 1024
+    }
+  },"author": {
+    "@type": "Person",
+    "name": "REO News"
+  }
+}</script>
+';
+$adbox = '
+<amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-6413080611011991"
+     data-ad-slot="5800327648"
+     data-auto-format="rspv"
+     data-full-width="">
+</amp-ad>
+';
+
+?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header mh-clearfix"><?php
+		the_title('<h1 class="entry-title">', '</h1>');
+		mh_post_header(); ?>
+	</header>
+	<?php dynamic_sidebar('posts-1'); ?>
+	<div class="entry-content mh-clearfix">
+						<?php
+		//the_post_thumbnail();
+		$n = urldecode('%0A');
+		$the_contentx = $post->post_content;
+		$the_contentx = str_replace('<figure', '<center><figure', $the_contentx);		
+		$the_contentx = str_replace('</figure>', '</center></figure>', $the_contentx);		
+		$the_contentx = str_replace('[ads]', $adbox, $the_contentx);		
+		$the_contentx = str_replace('[<a href="https://news.xttsys.com">xttnews</a>]', '<p><center>'.$adbox.'</center></p>', $the_contentx);		
+		$the_contentx = str_replace('<a href="https://news.xttsys.com">.</a>', '<center>'.$adbox.'</center>', $the_contentx);		
+		echo $the_contentx;		
+						?>		
+	</div>
+	<div style="background: yellow; padding: 7px; margin-bottom: 5px; text-align: justify;">
+		Jangan lupa <b>Follow</b> untuk <b>mengikuti</b> update terbaru dari REO News yang berisi info unik dan update,
+		contohnya seperti <b><?php echo $post_title_m; ?></b>.
+	</div>
+	<?php echo '<p>'.$adbox.'</p>';
+	the_tags('<div class="entry-tags mh-clearfix"><i class="fa fa-tag"></i><ul><li>','</li><li>','</li></ul></div>');
+	dynamic_sidebar('posts-2'); ?>
+</article>
