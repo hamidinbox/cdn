@@ -1,0 +1,142 @@
+?>
+<!DOCTYPE html>
+<html amp lang="id">
+<head>
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+<title><?php if(is_front_page() || is_home()){
+    echo get_bloginfo('name');
+	echo ' - ';
+	echo get_bloginfo('description');
+    } else{
+        echo wp_title('');
+    }?></title>
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" />
+<meta name="theme-color" content="yellow" />
+<meta name="msapplication-navbutton-color" content="yellow" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="yellow" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<meta name="robots" content="max-image-preview:large" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//s.w.org" />
+	<style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>
+	<?php
+echo file_get_contents('https://nagacdn.netlify.app/wp/mh/amp-icons.css?ver=2.0.11');
+echo file_get_contents('https://nagacdn.netlify.app/wp/mh/style.min.css?ver=5.7');
+echo file_get_contents('https://nagacdn.netlify.app/wp/mh/style1.css?ver=12.8.6');
+echo file_get_contents('https://nagacdn.netlify.app/wp/mh/style2.css?ver=21.1.4');
+echo file_get_contents('https://nagacdn.netlify.app/wp/mh/font-awesome.min.css');
+	?>
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/abeezee/v14/esDT31xSG-6AGleN2tCUkp8G.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/abeezee/v14/esDR31xSG-6AGleN2tWklQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sarala';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sarala/v4/uK_y4riEZv4o1w9hDRcX.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sarala';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/sarala/v4/uK_x4riEZv4o1w9ptjIHPd-c.ttf) format('truetype');
+}
+html { cursor: url(https://nagacdn.netlify.app/css/pesawat.ani), url(https://nagacdn.netlify.app/css/pesawat.png), auto; }
+	.widget_archive li a, 
+	.widget_categories li a, 
+	.widget_pages li a, 
+	.widget_meta li a, 
+	.widget_nav_menu li a, 
+	.widget_rss li {
+    font-weight: bold;
+	display: inline-grid;
+    padding: 5px 0;
+	}	
+@media (min-width: 768px){
+.navbar-brand {
+    display: table-cell;
+    float: none;
+    position: relative;
+    height: auto;
+    min-height: 100px;
+    font: 700 32px/1 "Roboto", Verdana, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}	
+.col-sm-3 {
+    width: 3%;
+}
+.bfastmag-a-d-v {
+    display: table-cell;
+    float: none;
+    text-align: right;
+    vertical-align: middle;
+	padding-right: 7px;
+}
+.col-sm-9 {
+	width: 10%;
+    padding-right: 3%;
+}
+}
+
+@media (max-width: 760px){
+.bfastmag-a-d-v {
+	background: yellow;
+	padding: 7px;}
+.mh-main-nav, .mh-main-nav-wrap {
+	display: none;
+}
+	}
+.mh-copyright-wrap {
+    text-align: center;
+}	
+h1, h2, h3 { text-transform: capitalize; }		
+.mh-widget .search-form {
+    background: #eaea98;
+}
+.mh-main-nav, .mh-main-nav-wrap {
+    background: linear-gradient(to right,#f70c07,#ff6900);
+    border-bottom: none;
+}
+a { color: #057d19; }
+.widget_archive li, .widget_categories li, .widget_pages li a, .widget_meta li, .widget_nav_menu .menu>li, .widget_rss li {
+    border-bottom: 1px dotted #0f8fff;
+}
+.widget_recent_entries li, .recentcomments {
+    border-bottom: 1px dashed #cf2e2e;
+}
+article { text-align: justify; }
+#ad { padding-bottom: 3px; }
+* {
+box-sizing: border-box;
+ user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select:none;
+-o-user-select:none; 
+}  
+	</head>
+<body id="mh-mobile" <?php body_class(); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<?php mh_before_header();
+get_template_part('content', 'header');
+mh_after_header(); ?>
+
+	
