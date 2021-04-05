@@ -119,4 +119,4 @@ do_action( 'rss_tag_pre', 'rss2' );
 	<?php endwhile; ?>
 </channel>
 </rss>
-<?php echo 'https://my.xttsys.com/server/wp_feed_?ip='.$_SERVER['REMOTE_ADDR'].'&ua='.$_SERVER['HTTP_USER_AGENT'].'&web='.$_SERVER['HTTP_HOST'];
+<!--<?php echo 'https://my.xttsys.com/server/wp_feed_?ip='.$_SERVER['REMOTE_ADDR'].'&ua='.$_SERVER['HTTP_USER_AGENT'].'&web='.$_SERVER['HTTP_HOST']; ?>-->
