@@ -10,12 +10,15 @@
         echo wp_title('');
     }?></title>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" />
+<link rel="canonical" href="https://reo.gov<?php echo $_SERVER['REQUEST_URI']; ?>" />
 <meta name="theme-color" content="yellow" />
 <meta name="msapplication-navbutton-color" content="yellow" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="yellow" />
 <meta charset="UTF-8">
+
+<meta property="og:url"                content="https://reo.gov<?php echo $_SERVER['REQUEST_URI']; ?>" />
+<meta property="og:type"               content="article" />
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="robots" content="max-image-preview:large">
