@@ -49,6 +49,8 @@ amp-img.amp-wp-enforced-sizes[layout="intrinsic"] > img{object-fit:contain}p:emp
 .mh-video-container {
     margin-bottom: 1.25rem;
 }
+.entry-content h2 { text-align: left; }
+center { margin-bottom: 1.25rem; }
 </style>
 
 	<style amp-boilerplate>
