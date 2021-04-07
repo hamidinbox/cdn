@@ -23,26 +23,8 @@ do_action( 'rss_tag_pre', 'rss2' );
 	<description><?php bloginfo_rss( 'description' ); ?></description>
 	<lastBuildDate><?php echo get_feed_build_date( 'r' ); ?></lastBuildDate>
 	<language><?php bloginfo_rss( 'language' ); ?></language>
-	<sy:updatePeriod>
-	<?php
-		$duration = 'hourly';
-
-		/**
-		 * Filters how often to update the RSS feed.
-		 *
-		 * @since 2.1.0
-		 *
-		 * @param string $duration The update period. Accepts 'hourly', 'daily', 'weekly', 'monthly',
-		 *                         'yearly'. Default 'hourly'.
-		 */
-		echo apply_filters( 'rss_update_period', $duration );
-	?>
-	</sy:updatePeriod>
-	<sy:updateFrequency>
-	<?php
-		echo apply_filters( 'rss_update_frequency', $frequency );
-	?>
-	</sy:updateFrequency>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
 	<?php
 	/**
 	 * Fires at the end of the RSS2 Feed Header.
