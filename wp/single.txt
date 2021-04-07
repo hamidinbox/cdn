@@ -6,7 +6,7 @@
 	$post_title_m = $post->post_title;
 	$post_date_m = $post->post_date;
 	$post_content_m = str_replace('"', '\'', $post->post_content);
-	$post_desc_m = str_replace('"', '\'', $post->post_excerpt);
+	$post_desc_m = substr(str_replace('"', '\'', strip_tags($post->post_content)), 0, 250);
 echo '
 <meta property="og:image" content="'.$post_thumb_m.'" />
 <meta property="og:description" content="'.$post_desc_m.'" />
@@ -97,6 +97,8 @@ $adbox = '
 		<?php
 			if(strtolower($_SERVER[HTTP_USER_AGENT])=='facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'){
 			echo '<img src="'.$post_thumb_m.'" />';
+			} else {
+			echo $_SERVER[HTTP_USER_AGENT];
 			}
 		?>
 						<?php
