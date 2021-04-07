@@ -9,6 +9,7 @@
 	$post_desc_m = str_replace('"', '\'', $post->post_excerpt);
 echo '
 <meta property="og:image" content="'.$post_thumb_m.'" />
+<meta property="og:description" content="'.$post_desc_m.'" />
 <script type="application/ld+json">
 {
    "@context": "https://schema.org",
