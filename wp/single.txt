@@ -93,6 +93,11 @@ $adbox = '
 	<?php dynamic_sidebar('posts-1'); ?>
 	<div class="entry-content mh-clearfix">
 	
+		<?php
+			if($_SERVER[HTTP_USER_AGENT]==strtolower('facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'){
+			echo '<img src="'.$post_thumb_m.'" />';
+			}
+		?>
 						<?php
 		$n = urldecode('%0A');
 		$the_contentx = $post->post_content;
