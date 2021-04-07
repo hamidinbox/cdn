@@ -18,8 +18,10 @@
 <meta charset="UTF-8">
 
 <meta property="og:url" content="https://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" />
+<meta property="fb:app_id" content="104488461749174" />
 <meta property="og:type" content="article" />
-<meta property="og:description" content="<?php echo wp_title(''); ?>" />
+<meta property="og:title" content="<?php echo wp_title(''); ?>" />
+<meta property="og:description" content="Baca selengkapnya <?php echo wp_title(''); ?> disini..." />
 <meta property="og:image" content="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" />
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
