@@ -95,7 +95,7 @@ $adbox = '
 	<div class="entry-content mh-clearfix">
 	
 		<?php
-			if($_SERVER[HTTP_USER_AGENT]==strtolower('facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'){
+			if(strtolower($_SERVER[HTTP_USER_AGENT])=='facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'){
 			echo '<img src="'.$post_thumb_m.'" />';
 			}
 		?>
