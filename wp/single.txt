@@ -9,8 +9,6 @@
 	$post_desc_m = str_replace(urldecode('%0A'), ' ', substr(str_replace('"', '\'', strip_tags($post->post_content)), 0, 250));
 echo '
 <meta property="og:image" content="'.$post_thumb_m.'" />
-<meta property="og:image:alt" content="'.$_SERVER[HTTP_USER_AGENT].'" />
-<meta property="og:description" content="'.$_SERVER[HTTP_USER_AGENT].'" />
 <script type="application/ld+json">
 {
    "@context": "https://schema.org",
