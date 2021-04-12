@@ -1,0 +1,6 @@
+    $the_contentx = $post->post_content;
+		$the_contentx = str_replace('<figure', '<center><figure', $the_contentx);		
+		$the_contentx = str_replace('</figure>', '</figure></center>', $the_contentx);		
+		$the_contentx = str_replace('<p>[ads]</p>', '', $the_contentx);		
+		$the_contentx = str_replace('<a href="https://news.xttsys.com">.</a>', '.', $the_contentx);		
+    echo $the_contentx;	
