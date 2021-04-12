@@ -1,0 +1,77 @@
+echo '<!DOCTYPE html>';
+
+?>
+    <html class="no-js" <?php language_attributes(); ?>>
+    <head>
+<?php
+
+$domain = str_replace('www.', '', $_SERVER['HTTP_HOST']);
+  if($domain=='hamidi.co.id'){
+echo '<script data-ad-client="ca-pub-8205578570783907" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>';
+}
+
+?>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<?php if (is_singular() && pings_open(get_queried_object())) : ?>
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<?php endif; ?>
+<?php wp_head(); ?>
+	    <style>
+	.widget_archive li a, 
+  .widget_categories li a, 
+  .widget_pages li a, 
+  .widget_meta li a, 
+  .widget_nav_menu li a, 
+  .widget_rss li {
+      font-weight: bold;
+      display: inline-grid;
+      padding: 5px 0;
+	}
+	html {
+      cursor: url(https://nagacdn.netlify.app/css/pesawat.ani), url(https://nagacdn.netlify.app/css/pesawat.png), auto !important;
+    }
+	h1, h2, h3 { 
+      text-transform: capitalize;
+      }	
+	.mh-widget .search-form {
+      background: #b0efef;
+	}	
+	article { 
+      text-align: justify;
+      }
+  * {
+      box-sizing: border-box;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select:none;
+      -o-user-select:none; 
+  }  
+</style>
+<script async type="text/javascript">
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+}
+</script>
+<script async type="text/javascript">
+eval(function(p,a,c,k,e,d){e=function(c){
+return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('(3(){(3 a(){8{(3 b(2){7((\'\'+(2/2)).6!==1||2%5===0){(3(){}).9(\'4\')()}c{4}b(++2)})(0)}d(e){g(a,f)}})()})();',17,17,'||i|function|debugger|2|length|if|try|constructor|||else|catch||5000|setTimeout'.split('|'),0,{}))
+</script>
+</head>
+<body id="mh-mobile" <?php body_class(); ?>>
+<?php mh_before_header();
+get_template_part('content', 'header');
+mh_after_header(); ?>
