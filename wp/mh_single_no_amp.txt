@@ -98,7 +98,7 @@ $adbox = 'No Ads';
 	<div style="background: yellow; padding: 7px; margin-bottom: 5px; text-align: justify;">
 		Mau masang iklan atau backlink? chat aja.
 	</div>
-	<?php echo '<p>'.$adbox.'</p>';
+	<?php 
 	the_tags('<div class="entry-tags mh-clearfix"><i class="fa fa-tag"></i><ul><li>','</li><li>','</li></ul></div>');
 	dynamic_sidebar('posts-2'); ?>
 </article>
