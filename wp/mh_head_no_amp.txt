@@ -3,6 +3,7 @@ echo '<!DOCTYPE html>';
 ?>
     <html class="no-js" <?php language_attributes(); ?>>
     <head>
+    
 <?php
 
 $domain = str_replace('www.', '', $_SERVER['HTTP_HOST']);
@@ -11,6 +12,7 @@ echo '<script data-ad-client="ca-pub-8205578570783907" async src="https://pagead
 }
 
 ?>
+
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -49,6 +51,15 @@ echo '<script data-ad-client="ca-pub-8205578570783907" async src="https://pagead
       -ms-user-select:none;
       -o-user-select:none; 
   }  
+  	.mh-copyrights { width: 100%; clear: both; text-transform:uppercase; }	
+	@media screen and (max-width:790px){
+		.reo-copy { width: 100%; display: block; text-align: center; }
+		.reo-page { width: 100%; display: block; text-align: center; }
+	}
+	@media screen and (min-width:800px){
+		.reo-copy { width: 35%; float: left; text-align: center; }
+		.reo-page { width: 64%; float: left; text-align: center; }
+	}
 </style>
 <script type="text/javascript">
 document.onkeydown = function(e) {
