@@ -6,7 +6,7 @@ echo '<!DOCTYPE html>';
 <?php
 
 $domain = str_replace('www.', '', $_SERVER['HTTP_HOST']);
-  if($domain=='hamidi.co.id'){
+  if($domain=='hamidi.co.id' || $domain=='wapseru.biz'){
 echo '<script data-ad-client="ca-pub-8205578570783907" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>';
 }
 
