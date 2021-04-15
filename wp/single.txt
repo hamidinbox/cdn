@@ -88,10 +88,8 @@ $adbox2 = '
      data-ad-client="ca-pub-6413080611011991"
      data-ad-slot="5800327648"
      data-auto-format="rspv"
-     data-full-width="no">
-		<div placeholder></div>
-		<div fallback></div>
-		<div overflow></div>
+     data-full-width="yes">
+		<div overflow=""></div>
 	</amp-ad>
 	';
 	
