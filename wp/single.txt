@@ -92,11 +92,6 @@ $adbox = '
 	<?php dynamic_sidebar('posts-1'); ?>
 	<div class="entry-content mh-clearfix">
 	
-		<?php
-			if(strtolower($_SERVER[HTTP_USER_AGENT])=='facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'){
-			echo '<img src="'.$post_thumb_m.'" />';
-			} 
-		?>
 						<?php
 		$n = urldecode('%0A');
 		$the_contentx = $post->post_content;
@@ -104,13 +99,19 @@ $adbox = '
 		$the_contentx = str_replace('</figure>', '</center></figure>', $the_contentx);		
 		$the_contentx = str_replace('[ads]', $adbox, $the_contentx);		
 		$the_contentx = str_replace('[<a href="https://news.xttsys.com">xttnews</a>]', '<p><center>'.$adbox.'</center></p>', $the_contentx);		
-		$the_contentx = str_replace('<a href="https://news.xttsys.com">.</a>', '<center>'.$adbox.'</center>', $the_contentx);		
+		$the_contentx = str_replace('<a href="https://news.xttsys.com">.</a>', '.<center>'.$adbox.'</center>', $the_contentx);		
+		$the_contentx = preg_replace('|<i-amphtml-sizer(.*?)</i-amphtml-sizer>|is', '', $the_contentx);		
+			if(strtolower($_SERVER[HTTP_USER_AGENT])=='facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'){
+		$the_contentx = str_replace('[iklan]', $adbox, $the_contentx);
+			} else {
+		$the_contentx = preg_replace('|<noscript>(.*?)</noscript>|is', '', $the_contentx);	
+		}
 		echo $the_contentx;		
 						?>		
 						
 	</div>
 	<div style="background: yellow; padding: 7px; margin-bottom: 5px; text-align: justify;">
-		Jangan lupa <b>Follow</b> untuk <b>mengikuti</b> update terbaru dari <b>REO News</b> yang berisi info unik dan update,
+		Jangan lupa <b>Follow</b> untuk <b>mengikuti</b> update terbaru dari <a href="https://news.google.com/publications/CAAqBwgKMJ7zowsw4f27Aw?hl=id&gl=ID&ceid=ID:id" rel="nofollow"><b>REO News</b></a> yang berisi info unik dan update,
 		contohnya seperti <b><?php echo $post_title_m; ?></b>.
 	</div>
 	<?php echo '<p>'.$adbox.'</p>';
