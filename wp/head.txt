@@ -77,6 +77,34 @@ nav {
 .mh-col-1-2 {
     width: 48.75%;
 }
+.mh-post-nav-prev img {
+    float: left;
+    margin-right: 15px;
+}
+img {
+    max-width: 100%;
+    width: auto\9;
+    height: auto;
+    vertical-align: bottom;
+}
+.mh-post-nav span {
+    display: block;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.mh-post-nav p {
+    font-size: 13px;
+    font-size: .8125rem;
+    overflow: hidden;
+}
+.mh-post-nav-next img {
+    float: right;
+    margin-left: 15px;
+}
+
 </style>
 
 	<style amp-boilerplate>
