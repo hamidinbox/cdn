@@ -58,11 +58,6 @@ amp-img.amp-wp-enforced-sizes[layout="intrinsic"] > img{object-fit:contain}p:emp
 }
 .entry-content h2 { text-align: left; }
 center { margin-bottom: 1.25rem; }
-nav {
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid #ebebeb;
-}
 .mh-row [class*=mh-col-]:first-child {
     margin: 0;
 }
