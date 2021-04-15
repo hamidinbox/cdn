@@ -83,7 +83,7 @@ $adbox = '
 </amp-ad>
 ';
 $adbox2 = '
-<amp-ad width="320" height="100" 
+<amp-ad width="320" height="100vw" 
      type="adsense"
      data-ad-client="ca-pub-6413080611011991"
      data-ad-slot="5800327648"
@@ -91,6 +91,7 @@ $adbox2 = '
      data-full-width="no">
 		<div placeholder></div>
 		<div fallback></div>
+		<div overflow></div>
 	</amp-ad>
 	';
 	
@@ -110,7 +111,7 @@ $adbox2 = '
 		$the_contentx = str_replace('</figure>', '</center></figure>', $the_contentx);		
 		$the_contentx = str_replace('[ads]', $adbox, $the_contentx);		
 		$the_contentx = str_replace('[<a href="https://news.xttsys.com">xttnews</a>]', '<p><center>'.$adbox.'</center></p>', $the_contentx);		
-		$the_contentx = str_replace('<a href="https://news.xttsys.com">.</a>', '.<center>'.$adbox2.'</center>', $the_contentx);		
+		$the_contentx = str_replace('<a href="https://news.xttsys.com">.</a>', '.<center>'.$adbox.'</center>', $the_contentx);		
 		$the_contentx = preg_replace('|<i-amphtml-sizer(.*?)</i-amphtml-sizer>|is', '', $the_contentx);		
 			if(strtolower($_SERVER[HTTP_USER_AGENT])=='facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'){
 		$the_contentx = str_replace('[iklan]', $adbox, $the_contentx);
