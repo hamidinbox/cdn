@@ -94,6 +94,12 @@ nav img {
     font-size: .8125rem;
     overflow: hidden;
 }
+.mh-post-nav-next p {
+    text-align: right;
+}
+.mh-post-nav-next span {
+    text-align: right;
+}
 .mh-post-nav-next img {
     float: right;
     margin-left: 15px;
@@ -101,6 +107,7 @@ nav img {
 @media (max-width: 760px){
 .mh-col-1-2 {
     width: 100%;
+    padding: 5px 0px;
 }
 }
 </style>
