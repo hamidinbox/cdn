@@ -76,9 +76,8 @@ center { margin-bottom: 1.25rem; }
     float: left;
     margin-right: 15px;
 }
-img {
+nav img {
     max-width: 100%;
-    width: auto\9;
     height: auto;
     vertical-align: bottom;
 }
@@ -99,7 +98,11 @@ img {
     float: right;
     margin-left: 15px;
 }
-
+@media (max-width: 760px){
+.mh-col-1-2 {
+    width: 100%;
+}
+}
 </style>
 
 	<style amp-boilerplate>
