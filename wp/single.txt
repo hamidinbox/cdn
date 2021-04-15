@@ -82,16 +82,6 @@ $adbox = '
      data-full-width="">
 </amp-ad>
 ';
-$adbox2 = '
-<amp-ad width="320" height="100vw" 
-     type="adsense"
-     data-ad-client="ca-pub-6413080611011991"
-     data-ad-slot="5800327648"
-     data-auto-format="rspv"
-     data-full-width="yes">
-		<div overflow=""></div>
-	</amp-ad>
-	';
 	
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -124,7 +114,7 @@ $adbox2 = '
 		Jangan lupa <b>Follow</b> untuk <b>mengikuti</b> update terbaru dari <a href="https://news.google.com/publications/CAAqBwgKMJ7zowsw4f27Aw?hl=id&gl=ID&ceid=ID:id" rel="nofollow"><b>REO News</b></a> yang berisi info unik dan update,
 		contohnya seperti <b><?php echo $post_title_m; ?></b>.
 	</div>
-	<?php echo '<p>'.$adbox2.'</p>';
+	<?php echo '<p>'.$adbox.'</p>';
 	the_tags('<div class="entry-tags mh-clearfix"><i class="fa fa-tag"></i><ul><li>','</li><li>','</li></ul></div>');
 	dynamic_sidebar('posts-2'); ?>
 </article>
