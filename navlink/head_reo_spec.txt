@@ -1,0 +1,9 @@
+                <b>
+					<a style="color:#337ab7" href="/smartphone/" title="Smartphone">Smartphone</a> &middot;
+					<a style="color:#337ab7" href="/laptop/" title="Laptop">Laptop</a> &middot;
+					<a style="color:#337ab7" href="/desktop/" title="Desktop">DesktopA</a> &middot;
+					<a style="color:#337ab7" href="/mobil/" title="Mobil">Mobil</a> &middot;
+					<a style="color:#337ab7" href="/motor/" title="Motor">Motor</a> &middot;
+					<a style="color:#337ab7" href="/mesin/" title="Mesin">Mesin</a> &middot;
+					<a style="color:#337ab7" href="/elektronik/" title="Elektronik">Elektronik</a> &middot;
+                </b>
