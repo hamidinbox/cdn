@@ -118,6 +118,26 @@ nav img {
     padding: 5px 0px;
 }
 }
+article { 
+      text-align: justify;
+      }
+* {
+      box-sizing: border-box;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select:none;
+      -o-user-select:none; 
+  }  
+.mh-copyrights { width: 100%; clear: both; text-transform:uppercase; }	
+@media screen and (max-width:790px){
+	.reo-copy { width: 100%; display: block; text-align: center; }
+	.reo-page { width: 100%; display: block; text-align: center; }
+	}
+@media screen and (min-width:800px){
+	.reo-copy { width: 35%; float: left; text-align: center; }
+	.reo-page { width: 64%; float: left; text-align: center; }
+	}
 </style>
 
 	<style amp-boilerplate>
