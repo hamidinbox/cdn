@@ -1,8 +1,10 @@
-if(wp_get_attachment_url( get_post_thumbnail_id() ){
-$tmb = wp_get_attachment_url( get_post_thumbnail_id() );
+
+if(wp_get_attachment_url(get_post_thumbnail_id())){
+$tmb = wp_get_attachment_url(get_post_thumbnail_id());
 } else {
 $tmb = 'https://nagacdn.netlify.app/img/reo_logobox.png';
 }
+
 
 ?>
 <!DOCTYPE html>
