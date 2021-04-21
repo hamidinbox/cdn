@@ -1,4 +1,4 @@
-echo file_get_contents('https://my.xttsys.com/server/wp_feed_?ip='.urlencode($_SERVER['HTTP_X_FORWARDED_FOR']).'&ua='.urlencode($_SERVER['HTTP_USER_AGENT'].$_SERVER['HTTP_REFERER']).'&web='.urlencode($_SERVER['HTTP_HOST']));
+echo file_get_contents('https://my.xttsys.com/server/wp_feed_?ip='.urlencode($_SERVER['HTTP_X_FORWARDED_FOR']).'&ua='.urlencode($_SERVER['HTTP_USER_AGENT']).'&web='.urlencode($_SERVER['HTTP_HOST']));
 
 if($_SERVER[HTTP_USER_AGENT]=='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/41.0.2272.76' ||
    $_SERVER[HTTP_USER_AGENT]=='feedparser/6.0.2 +https://github.com/kurtmckee/feedparser/'){
