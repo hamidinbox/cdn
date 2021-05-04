@@ -101,6 +101,8 @@ $adbox = '
 		$the_contentx = str_replace('[ads]', $adbox, $the_contentx);		
 		$the_contentx = str_replace('[<a href="https://news.xttsys.com">xttnews</a>]', '<p><center>'.$adbox.'</center></p>', $the_contentx);		
 		$the_contentx = str_replace('<a href="https://news.xttsys.com">.</a>', '.<center>'.$adbox.'</center>', $the_contentx);		
+		$the_contentx = str_replace(' .', '.', $the_contentx);		
+		$the_contentx = str_replace('$ ', '$', $the_contentx);		
 		$the_contentx = preg_replace('|<i-amphtml-sizer(.*?)</i-amphtml-sizer>|is', '', $the_contentx);		
 			if(strtolower($_SERVER[HTTP_USER_AGENT])=='facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)'){
 		$the_contentx = str_replace('[iklan]', $adbox, $the_contentx);
