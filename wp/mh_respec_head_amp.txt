@@ -42,6 +42,7 @@ $tmb = 'https://nagacdn.netlify.app/img/reo_logobox.png';
 <link rel="dns-prefetch" href="//s.w.org">
 <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
 <script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
 <script src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async="" custom-element="amp-form"></script>
 <link crossorigin="anonymous" rel="stylesheet" id="mh-foodmagazine-fonts-css" href="https://fonts.googleapis.com/css?family=ABeeZee:400,400italic%7cSarala:400,700" type="text/css" media="all">
