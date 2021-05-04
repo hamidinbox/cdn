@@ -19,7 +19,7 @@ $tmb = 'https://nagacdn.netlify.app/img/reo_logobox.png';
     }?></title>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="canonical" href="https://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" />
-<meta name="theme-color" content="yellow" />
+<meta name="theme-color" content="green" />
 <meta name="msapplication-navbutton-color" content="yellow" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="yellow" />
