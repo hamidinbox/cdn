@@ -77,9 +77,10 @@ $adbox = '
 <amp-ad width="100vw" height="320"
      type="adsense"
      data-ad-client="ca-pub-6413080611011991"
-     data-ad-slot="5800327648"
+     data-ad-slot="6581712222"
      data-auto-format="rspv"
      data-full-width="">
+  <div overflow=""></div>
 </amp-ad>
 ';
 	
