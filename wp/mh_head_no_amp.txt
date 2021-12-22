@@ -12,7 +12,6 @@ echo '<!DOCTYPE html>';
 //}
 
 ?>
-<script data-cfasync="false" src="//dq06u9lt5akr2.cloudfront.net/?tluqd=937403"></script>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
