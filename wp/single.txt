@@ -108,6 +108,9 @@ $adbox = '
 			} else {
 		$the_contentx = preg_replace('|<noscript>(.*?)</noscript>|is', '', $the_contentx);	
 		}
+		$the_contentx = str_replace('<div class="entry-content mh-clearfix">', $adbox.'<div class="entry-content mh-clearfix">', $the_contentx);
+		$the_contentx = str_replace('<center></center>', $adbox.'<p></p>', $the_contentx);
+		
 		echo $the_contentx;		
 						?>		
 						
