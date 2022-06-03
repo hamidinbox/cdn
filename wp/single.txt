@@ -90,6 +90,7 @@ $adbox = '
 		mh_post_header(); ?>
 	</header>
 	<?php dynamic_sidebar('posts-1'); ?>
+	<p>
 <amp-ad width="100vw" height="320"
      type="adsense"
      data-ad-client="ca-pub-6413080611011991"
@@ -97,6 +98,7 @@ $adbox = '
      data-auto-format="rspv"
      data-full-width="">
 </amp-ad>
+	</p>
 	<div class="entry-content mh-clearfix">
 	
 						<?php
@@ -115,7 +117,7 @@ $adbox = '
 			} else {
 		$the_contentx = preg_replace('|<noscript>(.*?)</noscript>|is', '', $the_contentx);	
 		}
-		$the_contentx = str_replace('<center></center>', $adbox.'<p></p>', $the_contentx);
+		$the_contentx = str_replace('<center></center>', '<p>'.$adbox.'</p>', $the_contentx);
 		
 		echo $the_contentx;		
 						?>		
