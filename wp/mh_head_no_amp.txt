@@ -3,7 +3,8 @@ echo '<!DOCTYPE html>';
 ?>
     <html class="no-js" <?php language_attributes(); ?>>
     <head>
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1682194735239396"
+     crossorigin="anonymous"></script>
 <?php
 
 //$domain = str_replace('www.', '', $_SERVER['HTTP_HOST']);
