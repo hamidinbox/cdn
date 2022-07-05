@@ -1,7 +1,7 @@
 		<div id="archives-2" class="widget widget_archive" style="text-align: justify">
-		    <p class="widget-title">LIST BLOGROLL</p>
-			<div style="background: #fdd9d9; color: blue; font-weight: bold; padding: 7px;">CUMA 50K UNTUK 90 HARI</div>
-			<div style="background: #fdf0c0; color: #ff0048; padding: 7px;">
+		    <h3 class="widget-title">LIST BLOGROLL</h3>
+			<div style="background: #fdf0c0; color: #ff0048; font-weight: bold; padding: 7px;">CUMA 50K UNTUK 90 HARI</div>
+			<div style="padding: 7px;">
         <a href="//zomby.ru.com">Pasang Disini</a>
       </div>
 		</div>
